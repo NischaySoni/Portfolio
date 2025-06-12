@@ -1,9 +1,31 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
+
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --card-bg: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+}
+
+body.dark-mode a {
+  color: #80cbc4;
+}
+
+body.dark-mode .btn {
+  background-color: #37474f;
+  color: #fff;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -59,7 +81,7 @@ html {
 }
 
 .project {
-  background: white;
+  background: var(--card-bg);
   padding: 20px;
   margin: 20px 0;
   border-radius: 6px;

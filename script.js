@@ -22,3 +22,15 @@ function typeWriter() {
   }
 }
 typeWriter();
+
+const toggleButton = document.getElementById("theme-toggle");
+toggleButton.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  // Change button icon/text based on mode
+  if (document.body.classList.contains("dark-mode")) {
+    toggleButton.textContent = "☀️ Light Mode";
+  } else {
+    toggleButton.textContent = "🌙 Dark Mode";
+  }
+});
