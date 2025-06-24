@@ -3,6 +3,12 @@ console.log("Portfolio Loaded");
 
 const faders = document.querySelectorAll('.fade-in');
 
+window.addEventListener('load', () => {
+  faders.forEach(fade => {
+    fade.classList.add('show'); // Show initially
+  });
+});
+
 window.addEventListener('scroll', () => {
   faders.forEach(fade => {
     const rect = fade.getBoundingClientRect();
@@ -11,6 +17,7 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
 
 const text = "Nischay Soni";
 let i = 0;
@@ -34,3 +41,8 @@ toggleButton.addEventListener("click", () => {
     toggleButton.textContent = "🌙 Dark Mode";
   }
 });
+
+console.log("Script loaded");
+console.log("Theme button:", document.getElementById("theme-toggle"));
+console.log("Typed text span:", document.getElementById("typed-text"));
+
