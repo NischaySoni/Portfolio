@@ -3,171 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Portfolio of Nischay Soni" />
-<meta name="keywords" content="Nischay Soni, Portfolio, IIITD, Web Developer, Python, C++">
-<meta property="og:title" content="Nischay Soni | Portfolio">
-<meta property="og:description" content="Software Developer | Web | AI | IIITD">
-<meta property="og:image" content="link-to-your-photo-or-banner.png">
-<meta property="og:url" content="https://yourcustomsite.netlify.app">
-<meta name="twitter:card" content="summary_large_image">
-
+  <meta name="description" content="Portfolio of Nischay Soni - AI & Software Developer" />
   <title>Nischay Soni | Portfolio</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">NS.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
   <section class="hero fade-in">
-  <button id="theme-toggle" class="btn">🌙 Dark Mode</button>
-  <h1>Hi, I'm <span id="typed-text"></span></h1>
-  <p>B.Tech CSAI IIITD'27</p>
-  <a href="#skills" class="btn">View Skills</a>
-  <a href="#projects" class="btn">View Projects</a>
-  <a href="#contact" class="btn">Contact</a>
-</section>
+    <div class="hero-content">
+      <p class="greeting">Hello, I am</p>
+      <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
+      <p class="subtitle">B.Tech CSAI @ IIITD '27</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn primary-btn">View Work</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
 
-
-  <!-- About Section -->
   <section id="about" class="section fade-in">
-    <h2>About Me</h2>
-    <p>I'm a 3rd-year Computer Science undergrad proficient in C++, Python, and Java with strong object oriented design skills. Highly organized, dependable, and adaptable team player with a
-positive attitude and a proven track record of managing multiple priorities efficiently.</p>
+    <div class="section-header">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-content">
+      <p>I'm a 3rd-year Computer Science undergrad specializing in AI and Robotics. I am proficient in <strong>C++, Python, and Java</strong> with strong object-oriented design skills. I am a highly organized, dependable, and adaptable team player with a proven track record of managing multiple priorities efficiently.</p>
+    </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, C/C++, Java, JavaScript, HTML/CSS</li>
-      <li><strong>Web Technologies:</strong> Node.js, React.js, Express.js, Django, Tailwind CSS</li>
-      <li><strong>Tools:</strong> Git, GitHub, VS Code, PyCharm, IntelliJ, CLion, LibGDX, Arduino, Linux, DataGrip, ROS, Figma, Miro, UML</li>
-      <li><strong>Libraries/Frameworks:</strong> NumPy, Pandas, Matplotlib, SciPy, Scikit-learn, TensorFlow, Keras, PyTorch, Seaborn, NLTK, OpenCV, YOLO</li>
-      <li><strong>Databases:</strong> MySQL, PostgreSQL</li>
-      <li><strong>CS Subjects:</strong> DSA (in C++), Operating System, OOPs (in java), Computer
-                  Organization, Introduction to Intelligent Systems (ML, IOT, CV, NLP,
-                  Ethics in AI, Robotics), DBMS, Statistical Machine Learning, Analysis and
-                  Design of Algorithms.</li>
-      <li><strong>Soft Skills:</strong> Teamwork, Problem-solving, Critical Thinking, Time Management, Organization</li>
-    </ul>
+    <div class="section-header">
+      <h2>Technical Arsenal</h2>
+    </div>
+    
+    <div class="skill-category">
+      <h3>Languages</h3>
+      <div class="skill-tags">
+        <span>Python</span><span>C/C++</span><span>Java</span><span>JavaScript</span><span>HTML/CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>AI & Data Science</h3>
+      <div class="skill-tags">
+        <span>TensorFlow</span><span>PyTorch</span><span>YOLO</span><span>OpenCV</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Web & Tools</h3>
+      <div class="skill-tags">
+        <span>React.js</span><span>Node.js</span><span>Django</span><span>Git/GitHub</span><span>Docker</span><span>Linux</span><span>ROS</span><span>Arduino</span>
+      </div>
+    </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects" class="section fade-in">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>Stock Trading Management System</h3>
-      <p><strong>Tech:</strong> MySQL, Node.js, Express.js, HTML, Tailwind CSS</p>
-      <p>• Developed a full-stack web application to simulate and manage stock trading activities with database integration.<br>
-        •	Designed and implemented an ER diagram and relational schema to model users, stocks, transactions, and portfolios <br>
-        •	Wrote complex SQL queries for trade execution, account summaries, and transaction history with real-time updates <br>
-        •	Built a responsive, user-friendly web interface using HTML and Tailwind CSS for seamless user interaction <br>
-        •	Developed server-side functionality with Node.js and Express.js to handle authentication, routing, and database operations</p>
-        <a href="#" target="_blank">GitHub</a>
+    <div class="section-header">
+      <h2>Featured Projects</h2>
     </div>
 
-    <div class="project">
-      <h3>YOLO-Based Object Detection</h3>
-      <p><strong>Tech:</strong> Python, YOLO, TensorFlow, PyTorch</p>
-      <p>
-        • Implemented object detection systems using YOLO with multiple CNN backbones (SqueezeNet, MobileNet, InceptionV3, ResNet50) for real-time tasks such as raccoon and kangaroo detection, and self-driving car perception. <br>
-        •	Developed and trained models with warm-up and multiscale training techniques for improved accuracy <br>
-        •	Enabled multi-GPU support to accelerate training and optimize performance <br>
-        •	Evaluated model accuracy using mean Average Precision (mAP) metrics <br>
-        •	Ensured cross-version compatibility with Python 2.7 and 3.6
-      </p>
-        <a href="https://github.com/NischaySoni/yolo.git" target="_blank">GitHub</a>
-    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fas fa-chart-line folder-icon"></i>
+          <div class="card-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Stock Trading System</h3>
+        <p>Full-stack web app to simulate stock trading. Features complex SQL queries for trade execution and a responsive Tailwind UI.</p>
+        <div class="tech-stack">
+          <span>Node.js</span><span>MySQL</span><span>Express</span>
+        </div>
+      </div>
 
-    <div class="project">
-      <h3>RISC-V Assembler & Simulator</h3>
-      <p><strong>Tech:</strong> Python</p>
-      <p>• Developed a custom RISC-V assembler that converts assembly code into binary machine code with
-        100% accuracy for the RISC-V ISA. <br>
-        • Built a RISC-V CPU simulator that successfully emulates 10+ instructions, handling program counters,
-        registers, memory access, and control flow. <br>
-        • Validated functionality with 50+ test cases, ensuring correctness and efficiency in instruction.
-        execution.
-        </p>
-        <a href="https://github.com/Sanchay117/RISCV-Assembler-Simulator.git" target="_blank">GitHub</a>
-    </div>
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fas fa-eye folder-icon"></i>
+          <div class="card-links">
+            <a href="https://github.com/NischaySoni/yolo" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>YOLO Object Detection</h3>
+        <p>Real-time detection using YOLO with CNN backbones (ResNet50, MobileNet). Optimized with multi-GPU support.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>PyTorch</span><span>CV</span>
+        </div>
+      </div>
 
-    <div class="project">
-      <h3>Angry Bird Game</h3>
-      <p><strong>Tech:</strong> Java, LibGDX</p>
-      <p>• Created 5 levels with increasing difficulty, implementing realistic projectile motion and collision
-        physics. <br>
-        • Utilized the LibGDX framework to optimize rendering, achieving 60 FPS performance across different
-        devices. <br>
-        • Reduced input lag by 30% through efficient event handling and touch-screen optimizations.</p>
-        <a href="https://github.com/NischaySoni/AP_project.git" target="_blank">GitHub</a>
-    </div>
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fas fa-microchip folder-icon"></i>
+          <div class="card-links">
+            <a href="https://github.com/Sanchay117/RISCV-Assembler-Simulator.git" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>RISC-V Simulator</h3>
+        <p>Custom assembler converting assembly to binary and a CPU simulator emulating instructions, memory, and registers.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>Assembly</span><span>Architecture</span>
+        </div>
+      </div>
 
-    <div class="project">
-      <h3>University Registration System</h3>
-      <p><strong>Tech:</strong> Java, OOPs, CLI-based interaction</p>
-      <p>
-        • Role-based Access Control: Supports three user roles — Students, Professors, and Administrators — each with tailored functionalities. <br>
-        • Course Management & Enrollment: Students can register for courses with prerequisite and credit checks; professors can manage course details, grades, and capacity (with exception handling like CourseFullException). <br>
-        • Deadline & Drop Tracking: Implements strict semester drop deadlines with custom exception handling (DropDeadlinePassedException). <br>
-        • Feedback & Complaint Modules: Allows students to file complaints and give course feedback; administrators can review and resolve them. <br>
-        • Grade Tracking & Academic Progress: Includes a Grade module to compute SGPA, CGPA, and detect incomplete courses or backlogs.
-      </p>
-        <a href="https://github.com/NischaySoni/AP_assignment/tree/main/University%20Registration%20System" target="_blank">GitHub</a>
-    </div>
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fas fa-gamepad folder-icon"></i>
+          <div class="card-links">
+            <a href="https://github.com/NischaySoni/AP_project.git" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>Angry Bird Clone</h3>
+        <p>Game with realistic physics engine using LibGDX. Optimized rendering to achieve consistent 60 FPS.</p>
+        <div class="tech-stack">
+          <span>Java</span><span>LibGDX</span><span>Physics</span>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fas fa-university folder-icon"></i>
+          <div class="card-links">
+            <a href="https://github.com/NischaySoni/AP_assignment/tree/main/University%20Registration%20System" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3>University Reg. System</h3>
+        <p>CLI-based system with Role-based Access Control for students and professors. Handles prerequisites and grading.</p>
+        <div class="tech-stack">
+          <span>Java</span><span>OOP</span><span>CLI</span>
+        </div>
+      </div>
 
-    <div class="project">
-      <h3>Byte Me</h3>
-      <p><strong>Tech:</strong> Java, OOP principles, File I/O, JUnit Testing, CLI-based interaction</p>
-      <p>
-        • Menu Browsing & Cart Operations: Users can explore the menu, add/remove items to/from their cart, and view dynamic pricing (BrowseMenu.java, CartItems.java, CartOperations.java). <br>
-        • User & Customer Type Handling: Differentiates between customer types (e.g., guest, registered users) with tailored privileges using CustomerTypes.java and User.java. <br>
-        • Order Lifecycle Management: Supports placing, tracking, and managing orders through classes like Order.java, OrderTracking.java, and OrderManagement.java. <br>
-        • Review System & Feedback: Enables customers to leave item-specific reviews via ItemReviews.java, supporting better decision-making. <br>
-        • Reporting & File Management: Automatically generates detailed reports and persists order history using ReportGeneration.java and FileHandler.java.
-      </p>
-        <a href="https://github.com/NischaySoni/AP_assignment/tree/main/Byte%20Me" target="_blank">GitHub</a>
+      <div class="project-card">
+        <div class="card-top">
+          <i class="fas fa-wifi folder-icon"></i>
+          <div class="card-links">
+            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <h3>AI Wearables IoT</h3>
+        <p>IoT connectivity for wearable devices with real-time cloud transcription synchronization and low latency.</p>
+        <div class="tech-stack">
+          <span>Arduino</span><span>C++</span><span>IoT</span>
+        </div>
+      </div>
     </div>
-
-    <div class="project">
-      <h3>AI Wearables</h3>
-      <p><strong>Tech:</strong> Arduino, C++, IoT</p>
-      <p>•Enhanced Bluetooth and IoT connectivity to enable real-time transcription data transfer between
-        wearable devices and mobile apps. <br>
-        • Integrated cloud storage, allowing users to access 100+ historical transcriptions with seamless
-        synchronization. <br>
-        • Optimized data transmission, reducing latency by 35% for a smoother user experience.
-      </p>
+    
+    <div class="center-btn">
+        <a href="https://github.com/NischaySoni" target="_blank" class="btn outline-btn">View More on GitHub</a>
     </div>
-
-    <div class="project">
-      <h3>Sahayata App (UI/UX Design)</h3>
-      <p><strong>Tech:</strong> Figma, Miro</p>
-      <p>• Designed 15+ interactive wireframes and high-fidelity mockups in Figma, ensuring intuitive user
-        navigation. <br>
-        • Conducted 5+ user testing sessions, refining UI/UX based on feedback to improve accessibility. <br>
-        • Created user personas and flowcharts in Miro, leading to a 30% improvement in task completion
-        efficiency.
-      </p>
-      <a href="Sahayata App.pdf" target="_blank">Sahayata App</a>
-    </div>
-
   </section>
 
-  <!-- Resume Section -->
-  <section id="resume" class="section fade-in">
-    <h2>Resume</h2>
-    <a href="Resume_NischaySoni.pdf" target="_blank" class="btn">View Resume</a>
-  </section>
-
-  <!-- Contact Section -->
   <section id="contact" class="section fade-in">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:nischay23353@iiitd.ac.in">nischay23353@iiitd.ac.in</a></p>
-    <p><a href="https://github.com/NischaySoni" target="_blank">GitHub</a></p>
-    <p><a href="https://www.linkedin.com/in/nischay-soni-671645275/" target="_blank">Linkedin</a></p>
+    <div class="contact-container">
+      <h2>Let's Connect</h2>
+      <p>Currently looking for Summer 2026 Internships.</p>
+      <a href="mailto:nischay23353@iiitd.ac.in" class="btn primary-btn email-btn">Say Hello</a>
+      
+      <div class="social-links">
+        <a href="https://github.com/NischaySoni" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nischay-soni-671645275/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="Resume_NischaySoni.pdf" target="_blank" title="Download Resume"><i class="fas fa-file-alt"></i></a>
+      </div>
+    </div>
   </section>
 
-  <script src="script.js" defer></script>
+  <footer>
+    <p>Designed & Built by Nischay Soni</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
